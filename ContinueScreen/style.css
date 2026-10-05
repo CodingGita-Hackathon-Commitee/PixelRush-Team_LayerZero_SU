@@ -1,0 +1,280 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #050505;
+    color: #1b1d20;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+    position: relative;
+
+    width: 100%;
+    max-width: 400px;
+
+    min-height: 100vh;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    padding-bottom: 65px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content {
+    position: relative;
+    z-index: 2;
+
+    min-height: calc(100vh - 65px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 245px;
+}
+
+
+/* =========================
+   ILLUSTRATION
+========================= */
+
+.illustration {
+    position: relative;
+
+    width: 130px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 80px;
+}
+
+
+/* Mint Arc */
+
+.arc {
+    position: absolute;
+
+    top: 0;
+
+    width: 125px;
+    height: 65px;
+
+    border: 9px solid #8ef2cf;
+
+    border-bottom: none;
+
+    border-radius: 100px 100px 0 0;
+}
+
+
+/* Center graphic */
+
+.illustration-icon {
+    position: relative;
+
+    z-index: 2;
+
+    width: 82px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 22px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff4a7 0%,
+            #eaffd4 55%,
+            transparent 56%
+        );
+
+    font-size: 56px;
+}
+
+
+/* =========================
+   CONTINUE BUTTON
+========================= */
+
+.continue-btn {
+    width: 280px;
+    height: 52px;
+
+    border: 2px solid #00d98b;
+    border-radius: 6px;
+
+    background: white;
+
+    color: #00d98b;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.continue-btn:hover {
+    background: #00d98b;
+    color: white;
+}
+
+
+/* =========================
+   BOTTOM GREEN GLOW
+========================= */
+
+.bottom-glow {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 65px;
+
+    height: 260px;
+
+    background:
+        radial-gradient(
+            ellipse at 50% 100%,
+            rgba(73, 255, 145, 0.75) 0%,
+            rgba(116, 255, 169, 0.45) 32%,
+            rgba(173, 255, 205, 0.25) 52%,
+            rgba(255, 255, 255, 0) 78%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav {
+    position: fixed;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 400px;
+
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #f7fff9;
+
+    z-index: 10;
+}
+
+.bottom-nav a {
+    min-width: 52px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3px;
+
+    color: #42534c;
+
+    font-size: 11px;
+}
+
+.bottom-nav a span {
+    font-size: 20px;
+}
+
+.bottom-nav .selected {
+    color: #008653;
+}
+
+
+/* Center Scan Button */
+
+.bottom-nav .scan-btn {
+    width: 56px;
+    height: 56px;
+
+    min-width: 56px;
+
+    margin-top: -28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #08b982;
+    color: #003f2c;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 160, 105, 0.25);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 360px) {
+
+    .content {
+        padding-top: 220px;
+    }
+
+    .continue-btn {
+        width: 250px;
+    }
+
+    .illustration {
+        margin-bottom: 70px;
+    }
+}
