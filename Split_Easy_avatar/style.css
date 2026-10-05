@@ -1,0 +1,1004 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080808;
+    color: #172033;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.app {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: auto;
+    background: #f8f8ff;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    height: 72px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #b9c2d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef1ff;
+    font-size: 21px;
+}
+
+.brand small {
+    display: block;
+    font-size: 11px;
+    color: #00805c;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+
+.brand h1 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #f3f5fc;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.header-buttons button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 20px;
+    color: #435047;
+}
+
+.header-buttons .profile {
+    background: #050505;
+    color: white;
+}
+
+
+/* =========================================
+   AVATAR SECTION
+========================================= */
+
+.avatar-section {
+    margin: 0 12px;
+    background: #e7fff6;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.preview-top {
+    height: 44px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-buttons {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.toggle-buttons button {
+    background: transparent;
+    padding: 6px 10px;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #46504d;
+}
+
+.toggle-buttons .active-toggle {
+    background: #007c5b;
+    color: white;
+}
+
+.shuffle {
+    background: white;
+    color: #007c5b;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   AVATAR PREVIEW
+========================================= */
+
+.avatar-preview {
+    height: 330px;
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        #d8fff1,
+        #b5e7d3
+    );
+    margin: 0 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Avatar */
+.avatar {
+    position: relative;
+    width: 125px;
+    height: 310px;
+    margin-top: 10px;
+}
+
+
+/* Head */
+.head {
+    position: absolute;
+    top: 30px;
+    left: 39px;
+    width: 48px;
+    height: 62px;
+    background: #b87548;
+    border-radius: 45% 45% 48% 48%;
+    z-index: 5;
+}
+
+.hair {
+    position: absolute;
+    top: 25px;
+    left: 38px;
+    width: 51px;
+    height: 27px;
+    background: #4d2b20;
+    border-radius: 50% 50% 35% 35%;
+    z-index: 7;
+}
+
+.ear {
+    position: absolute;
+    width: 9px;
+    height: 16px;
+    background: #a96742;
+    top: 25px;
+    border-radius: 50%;
+}
+
+.left-ear {
+    left: -6px;
+}
+
+.right-ear {
+    right: -6px;
+}
+
+.eyes {
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    display: flex;
+    gap: 17px;
+}
+
+.eyes span {
+    width: 5px;
+    height: 5px;
+    background: #29231e;
+    border-radius: 50%;
+}
+
+.nose {
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    background: #a56340;
+    left: 22px;
+    top: 34px;
+    border-radius: 50%;
+}
+
+.mouth {
+    position: absolute;
+    width: 13px;
+    height: 5px;
+    border-bottom: 2px solid #632f28;
+    left: 18px;
+    top: 47px;
+    border-radius: 50%;
+}
+
+
+/* Neck */
+.neck {
+    position: absolute;
+    top: 86px;
+    left: 51px;
+    width: 24px;
+    height: 22px;
+    background: #a96742;
+    z-index: 3;
+}
+
+
+/* Hoodie */
+.hoodie {
+    position: absolute;
+    top: 93px;
+    left: 27px;
+    width: 72px;
+    height: 106px;
+    background: #e8752e;
+    border-radius: 28px 28px 15px 15px;
+    z-index: 4;
+}
+
+.hoodie:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 12px;
+    width: 48px;
+    height: 30px;
+    border-radius: 50%;
+    background: #d76527;
+}
+
+.hood-string {
+    position: absolute;
+    top: 17px;
+    width: 2px;
+    height: 22px;
+    background: #774029;
+}
+
+.left-string {
+    left: 27px;
+}
+
+.right-string {
+    right: 27px;
+}
+
+
+/* Arms */
+.left-arm,
+.right-arm {
+    position: absolute;
+    top: 101px;
+    width: 21px;
+    height: 93px;
+    background: #df6e2c;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.left-arm {
+    left: 15px;
+    transform: rotate(5deg);
+}
+
+.right-arm {
+    right: 15px;
+    transform: rotate(-5deg);
+}
+
+.left-hand,
+.right-hand {
+    position: absolute;
+    top: 186px;
+    width: 16px;
+    height: 19px;
+    background: #ad7048;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.left-hand {
+    left: 16px;
+}
+
+.right-hand {
+    right: 16px;
+}
+
+
+/* Pants */
+.pants {
+    position: absolute;
+    top: 187px;
+    left: 30px;
+    width: 66px;
+    height: 91px;
+    background: #28364d;
+    border-radius: 5px 5px 14px 14px;
+    z-index: 3;
+}
+
+.left-leg,
+.right-leg {
+    position: absolute;
+    bottom: -5px;
+    width: 28px;
+    height: 83px;
+    background: #26344a;
+    border-radius: 4px 4px 10px 10px;
+}
+
+.left-leg {
+    left: 1px;
+}
+
+.right-leg {
+    right: 1px;
+}
+
+
+/* Shoes */
+.shoes {
+    position: absolute;
+    top: 274px;
+    left: 28px;
+    width: 70px;
+    z-index: 6;
+}
+
+.left-shoe,
+.right-shoe {
+    position: absolute;
+    width: 31px;
+    height: 16px;
+    background: white;
+    border-radius: 8px 12px 5px 5px;
+    border-bottom: 5px solid #596477;
+}
+
+.left-shoe {
+    left: 0;
+}
+
+.right-shoe {
+    right: 0;
+}
+
+
+/* Preview arrows */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.8);
+    color: #53605b;
+    font-size: 28px;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: -50px;
+}
+
+.arrow.right {
+    right: -50px;
+}
+
+.rotate-tip {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   MAIN TABS
+========================================= */
+
+.main-tabs {
+    display: flex;
+    gap: 6px;
+    padding: 10px 12px 6px;
+    overflow-x: auto;
+}
+
+.main-tabs button {
+    flex-shrink: 0;
+    background: #f0f2fa;
+    color: #4a5358;
+    padding: 9px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.main-tabs .selected {
+    background: #79efd0;
+    color: #006e55;
+}
+
+
+/* =========================================
+   SUB TABS
+========================================= */
+
+.sub-tabs {
+    display: flex;
+    gap: 5px;
+    padding: 3px 12px 10px;
+    overflow-x: auto;
+}
+
+.sub-tabs button {
+    flex-shrink: 0;
+    background: #e9ecf5;
+    color: #3f484b;
+    padding: 6px 9px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+
+.sub-tabs .selected {
+    background: #007b59;
+    color: white;
+}
+
+
+/* =========================================
+   GENERAL SECTION
+========================================= */
+
+.custom-section {
+    margin: 0 12px 14px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.section-title h2 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.section-title span {
+    font-size: 11px;
+    color: #46504c;
+}
+
+
+/* =========================================
+   SKIN COLORS
+========================================= */
+
+.skin-colors {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f0f3ff;
+    border-radius: 28px;
+    padding: 13px 16px;
+}
+
+.skin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.skin1 {
+    background: #fde0cf;
+}
+
+.skin2 {
+    background: #f5cda8;
+}
+
+.skin3 {
+    background: #dfa06c;
+}
+
+.skin4 {
+    background: #bd7746;
+}
+
+.skin5 {
+    background: #8d4829;
+}
+
+.skin6 {
+    background: #4d291c;
+}
+
+.selected-skin {
+    color: white;
+    border: 2px solid white;
+    outline: 2px solid #dc9b6c;
+}
+
+.sparkle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #b9f5dd;
+    color: #008665;
+}
+
+
+/* =========================================
+   HAIR STYLES
+========================================= */
+
+.hair-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.style-card {
+    height: 96px;
+    background: white;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.style-card p {
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.style-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #eaf0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #344761;
+    font-size: 22px;
+}
+
+.selected-style {
+    background: #c8fae9;
+}
+
+.selected-style .style-icon {
+    background: white;
+}
+
+.style-card > span {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    background: #008363;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Dye */
+
+.dye-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.dye {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.black {
+    background: #202124;
+}
+
+.brown {
+    background: #75452e;
+}
+
+.gold {
+    background: #d4a64a;
+}
+
+.pink {
+    background: #ed68ac;
+}
+
+.green {
+    background: #30c99a;
+}
+
+.orange {
+    background: #ff923c;
+}
+
+.gray {
+    background: #dce2eb;
+}
+
+.selected-dye {
+    outline: 2px solid #007c5b;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   EXPRESSIONS
+========================================= */
+
+.expression-buttons {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+}
+
+.expression-buttons button {
+    white-space: nowrap;
+    background: white;
+    padding: 9px 12px;
+    border-radius: 18px;
+    color: #41474a;
+    font-size: 12px;
+}
+
+.expression-buttons .selected-expression {
+    background: #c6f8e5;
+    color: #006f55;
+}
+
+
+/* =========================================
+   EYEWEAR
+========================================= */
+
+.eyewear-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.eye-card {
+    height: 90px;
+    border-radius: 24px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.eye-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #455250;
+}
+
+.eye-card p {
+    font-size: 11px;
+}
+
+.selected-eye {
+    background: #c3f7e5;
+    color: #007557;
+}
+
+.eye-card > span {
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    background: #007d5b;
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================
+   OUTFIT
+========================================= */
+
+.outfit-card {
+    margin: 0 12px 12px;
+    padding: 12px;
+    background: #eaf0ff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.outfit-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #76edc7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007758;
+}
+
+.outfit-info {
+    flex: 1;
+}
+
+.outfit-info strong {
+    display: block;
+    font-size: 12px;
+}
+
+.outfit-info p {
+    color: #667078;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.outfit-card button {
+    background: white;
+    color: #00775a;
+    border-radius: 20px;
+    padding: 7px 11px;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   SAVE SECTION
+========================================= */
+
+.save-section {
+    height: 77px;
+    background: white;
+    border-top: 1px solid #e2e5ed;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    position: relative;
+    z-index: 5;
+}
+
+.share-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #dce1e5;
+    font-size: 22px;
+    color: #007758;
+}
+
+.save-button {
+    flex: 1;
+    height: 48px;
+    border-radius: 28px;
+    background: #007b55;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 5px 12px rgba(0, 100, 70, .2);
+}
+
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 430px;
+    height: 74px;
+    background: white;
+    border-top: 1px solid #e1e4eb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20;
+}
+
+.bottom-nav a {
+    flex: 1;
+    text-decoration: none;
+    color: #44504c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 11px;
+}
+
+.bottom-nav a span {
+    font-size: 22px;
+}
+
+.bottom-nav .balance {
+    color: #007d5a;
+}
+
+
+/* Scan button */
+
+.scan {
+    position: relative;
+    height: 74px;
+    justify-content: flex-end;
+}
+
+.scan strong {
+    position: absolute;
+    top: -27px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background: #08bc8a;
+    color: #003f32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    box-shadow: 0 5px 12px rgba(0,0,0,.15);
+}
+
+.scan small {
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: #44504c;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.main-tabs::-webkit-scrollbar,
+.sub-tabs::-webkit-scrollbar,
+.expression-buttons::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 360px) {
+
+    .header {
+        padding: 8px 10px;
+    }
+
+    .brand h1 {
+        font-size: 17px;
+    }
+
+    .brand small {
+        font-size: 9px;
+    }
+
+    .header-buttons button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .avatar-section {
+        margin: 0 8px;
+    }
+
+    .avatar-preview {
+        height: 300px;
+        margin: 0 48px;
+    }
+
+    .avatar {
+        transform: scale(.9);
+    }
+
+    .skin-colors {
+        gap: 5px;
+        padding: 11px;
+    }
+
+    .skin,
+    .sparkle {
+        width: 35px;
+        height: 35px;
+    }
+
+    .style-card {
+        height: 90px;
+    }
+
+    .style-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .section-title h2 {
+        font-size: 17px;
+    }
+
+    .dye-row {
+        gap: 6px;
+    }
+
+    .dye {
+        width: 25px;
+        height: 25px;
+    }
+}
