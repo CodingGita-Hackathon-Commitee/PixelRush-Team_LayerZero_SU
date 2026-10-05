@@ -1,0 +1,945 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #eeeeee;
+
+    color: #18201d;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+    width: 390px;
+
+    min-height: 100vh;
+
+    margin: auto;
+
+    background-color: #f9f9ff;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 80px;
+
+    background-color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 10px 14px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.back {
+    font-size: 34px;
+
+    width: 35px;
+
+    color: #25302d;
+}
+
+.profile-pic {
+    width: 44px;
+    height: 44px;
+
+    background-color: #dcecff;
+
+    border: 2px solid #b5d9f2;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.title-area {
+    margin-left: 8px;
+
+    flex: 1;
+}
+
+.title-area h2 {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 18px;
+}
+
+.title-area p {
+    margin: 3px 0 0;
+
+    font-size: 11px;
+
+    color: #777;
+}
+
+.online {
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #00a765;
+
+    border-radius: 50%;
+}
+
+.dot {
+    margin: 0 3px;
+}
+
+.settings {
+    font-size: 20px;
+
+    color: #63706c;
+
+    margin-right: 15px;
+}
+
+.more {
+    font-size: 25px;
+
+    color: #4d5754;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    padding: 82px 15px 160px;
+}
+
+
+/* =========================
+   LEDGER
+========================= */
+
+.ledger {
+    height: 55px;
+
+    border: 1px solid #dce5ff;
+
+    background-color: #f1f4ff;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 7px 10px;
+}
+
+.ledger-icon {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background-color: #dce9e8;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #087d60;
+}
+
+.ledger-text {
+    margin-left: 8px;
+
+    flex: 1;
+}
+
+.ledger-text p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+.ledger-text strong {
+    font-size: 14px;
+}
+
+.ledger-text span {
+    font-size: 11px;
+
+    color: #555;
+}
+
+.audited {
+    background-color: #cef5e7;
+
+    color: #087657;
+
+    padding: 7px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.audited span {
+    margin-left: 4px;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.actions {
+    display: flex;
+
+    gap: 5px;
+
+    margin-top: 10px;
+}
+
+.actions button {
+    flex: 1;
+
+    padding: 8px 5px;
+
+    border-radius: 20px;
+
+    border: 1px solid #dce3f5;
+
+    background-color: white;
+
+    color: #25322f;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+.actions .quick {
+    background-color: #007d45;
+
+    border-color: #007d45;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   VOICE NOTE
+========================= */
+
+.voice {
+    width: 84%;
+
+    margin-left: auto;
+
+    margin-top: 16px;
+
+    padding: 10px;
+
+    background-color: #e3f2f1;
+
+    border: 1px solid #9ed1cc;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.play {
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #007b4b;
+
+    color: white;
+}
+
+.voice div {
+    margin-left: 8px;
+
+    flex: 1;
+}
+
+.voice b {
+    color: #00765a;
+
+    font-size: 11px;
+}
+
+.voice p {
+    font-size: 11px;
+
+    margin: 5px 0 0;
+
+    line-height: 16px;
+}
+
+.check {
+    color: #00895d;
+
+    font-weight: bold;
+}
+
+.time {
+    color: #6d7471;
+
+    font-size: 10px;
+}
+
+.voice-time {
+    text-align: right;
+
+    margin-top: 7px;
+
+    margin-right: 30px;
+}
+
+
+/* =========================
+   USER MESSAGE
+========================= */
+
+.user-message {
+    width: 80%;
+
+    margin-left: auto;
+
+    margin-top: 15px;
+
+    padding: 13px 15px;
+
+    background-color: #007d43;
+
+    color: white;
+
+    border-radius: 16px 4px 16px 16px;
+}
+
+.user-message p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 19px;
+}
+
+.user-info {
+    width: 28px;
+    height: 28px;
+
+    background-color: #dce6ff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-left: auto;
+
+    margin-top: -105px;
+
+    transform: translateY(-5px);
+
+    color: #26375b;
+
+    font-weight: bold;
+}
+
+.user-time {
+    text-align: right;
+
+    margin-top: 92px;
+
+    margin-right: 10px;
+}
+
+
+/* =========================
+   AI MESSAGE
+========================= */
+
+.ai-row {
+    display: flex;
+
+    margin-top: 17px;
+
+    align-items: flex-start;
+}
+
+.ai-small {
+    width: 35px;
+    height: 35px;
+
+    background-color: #dcecff;
+
+    border: 1px solid #b8d6ef;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 19px;
+
+    flex-shrink: 0;
+}
+
+.ai-message {
+    background-color: white;
+
+    border: 1px solid #e5e8f0;
+
+    border-radius: 0 17px 17px 17px;
+
+    margin-left: 8px;
+
+    padding: 16px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+}
+
+
+/* =========================
+   AI TITLE
+========================= */
+
+.ai-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    flex-wrap: wrap;
+}
+
+.ai-title strong {
+    color: #007c49;
+
+    font-size: 13px;
+}
+
+.ai-title span {
+    color: #6b726f;
+
+    font-size: 10px;
+}
+
+.ai-title b {
+    background-color: #bdf4df;
+
+    color: #007b53;
+
+    border-radius: 12px;
+
+    padding: 5px 7px;
+
+    font-size: 8px;
+}
+
+
+/* =========================
+   AI TEXT
+========================= */
+
+.ai-text {
+    font-size: 14px;
+
+    line-height: 19px;
+
+    margin: 14px 0;
+}
+
+
+/* =========================
+   RECEIPT
+========================= */
+
+.receipt {
+    background-color: #f4f6ff;
+
+    border: 1px solid #dce4ff;
+
+    border-radius: 30px;
+
+    padding: 12px;
+}
+
+
+/* RECEIPT HEADING */
+
+.receipt-heading {
+    display: flex;
+
+    align-items: center;
+}
+
+.receipt-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background-color: #e2e9ff;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #008366;
+}
+
+.restaurant {
+    margin-left: 8px;
+
+    flex: 1;
+}
+
+.restaurant strong {
+    font-size: 13px;
+}
+
+.restaurant p {
+    margin: 3px 0;
+
+    font-size: 9px;
+
+    color: #707673;
+
+    line-height: 13px;
+}
+
+.amount {
+    text-align: right;
+}
+
+.amount strong {
+    display: block;
+
+    font-size: 16px;
+}
+
+.amount span {
+    display: block;
+
+    color: #008157;
+
+    font-size: 10px;
+}
+
+.amount small {
+    color: #008157;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   FOOD ITEMS
+========================= */
+
+.food-item {
+    background-color: white;
+
+    border-radius: 15px;
+
+    padding: 8px;
+
+    margin-top: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    font-size: 11px;
+}
+
+.food-item i {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    margin-right: 8px;
+}
+
+.food-item .red {
+    background-color: #c82020;
+}
+
+.food-item .green {
+    background-color: #00845a;
+}
+
+.food-item .brown {
+    background-color: #8c6043;
+}
+
+.food-item span {
+    flex: 1;
+}
+
+.food-item strong {
+    margin-right: 3px;
+}
+
+.food-item small {
+    color: #777;
+
+    font-size: 8px;
+}
+
+
+/* =========================
+   SAVING BOX
+========================= */
+
+.saving {
+    background-color: #c9f5e5;
+
+    border: 1px solid #69dbb7;
+
+    border-radius: 22px;
+
+    margin-top: 10px;
+
+    padding: 9px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.saving div {
+    flex: 1;
+}
+
+.saving p {
+    margin: 0;
+
+    color: #69736f;
+
+    font-size: 9px;
+}
+
+.saving strong {
+    color: #00804e;
+
+    font-size: 12px;
+
+    display: block;
+
+    margin-top: 3px;
+}
+
+.saving > span {
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 7px 10px;
+
+    color: #00804e;
+
+    font-size: 10px;
+}
+
+.saving > span b {
+    font-size: 12px;
+}
+
+
+/* =========================
+   RECEIPT BUTTONS
+========================= */
+
+.receipt-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.receipt-buttons button {
+    border: none;
+
+    border-radius: 25px;
+
+    padding: 10px;
+
+    font-size: 11px;
+}
+
+.apply {
+    flex: 1;
+
+    background-color: #007b43;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.share {
+    width: 72px;
+
+    background-color: #e7edff;
+
+    color: #25334c;
+}
+
+
+/* =========================
+   CHAT INPUT
+========================= */
+
+.chat-area {
+    position: fixed;
+
+    bottom: 72px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 365px;
+
+    height: 58px;
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5px;
+}
+
+.chat-area button {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #eaf0ff;
+
+    color: #087d61;
+
+    font-size: 18px;
+}
+
+.chat-area input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 10px;
+
+    font-size: 13px;
+}
+
+.chat-area .send {
+    background-color: #007d4b;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   TIP
+========================= */
+
+.tip {
+    position: fixed;
+
+    bottom: 42px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 350px;
+
+    text-align: center;
+
+    color: #65716d;
+
+    font-size: 9px;
+}
+
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav {
+    position: fixed;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 390px;
+
+    height: 65px;
+
+    background-color: white;
+
+    border-top: 1px solid #e5e5e5;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.bottom-nav div {
+    text-align: center;
+
+    color: #4e5a55;
+
+    width: 20%;
+}
+
+.bottom-nav span {
+    display: block;
+
+    font-size: 21px;
+}
+
+.bottom-nav p {
+    margin: 3px 0 0;
+
+    font-size: 10px;
+}
+
+.bottom-nav .active {
+    color: #008054;
+}
+
+
+/* =========================
+   SCAN BUTTON
+========================= */
+
+.bottom-nav .scan {
+    position: relative;
+
+    color: #008054;
+}
+
+.bottom-nav .scan span {
+    width: 58px;
+    height: 58px;
+
+    margin: -35px auto 0;
+
+    border-radius: 50%;
+
+    background-color: #09bb82;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.bottom-nav .scan p {
+    margin-top: 6px;
+}
+
+
+
+
+@media (max-width: 390px) {
+
+    .app {
+        width: 100%;
+    }
+
+    .bottom-nav {
+        width: 100%;
+    }
+
+    .chat-area {
+        width: 94%;
+    }
+
+    .tip {
+        width: 90%;
+    }
+
+    .content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
