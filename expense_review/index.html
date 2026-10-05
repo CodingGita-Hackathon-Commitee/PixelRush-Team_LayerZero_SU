@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <button class="icon-btn">←</button>
+            <h2>Expense Review</h2>
+            <div class="header-actions">
+                <button class="icon-btn">ⓘ</button>
+                <button class="profile-btn">♙</button>
+            </div>
+        </header>
+
+        <main class="content">
+
+            <!-- Expense Summary -->
+            <section class="expense-card">
+                <div class="card-top">
+                    <span class="trip-label">GOA TRIP 2025</span>
+                    <span class="paid-label">▣ Paid by You</span>
+                </div>
+
+                <h1>Beach Shack Seafood</h1>
+
+                <div class="total-row">
+                    <span class="total">₹180.00</span>
+                    <span class="total-text">total</span>
+                </div>
+
+                <hr>
+
+                <div class="share-row">
+                    <span class="share-label">Your share: ₹45.00</span>
+                    <span class="back-label">₹135.00 back</span>
+                </div>
+            </section>
+
+            <!-- Receipt -->
+            <section class="receipt-card">
+                <div class="receipt-icon">▤</div>
+
+                <div class="receipt-info">
+                    <h3>Beach Shack Bill</h3>
+                    <p>₹180.00 • 4 items</p>
+                </div>
+
+                <button class="receipt-btn">View Receipt</button>
+            </section>
+
+            <!-- Split Breakdown -->
+            <div class="section-heading">
+                <h3>Split Breakdown (4 friends)</h3>
+                <span class="per-person">₹45.00 / person</span>
+            </div>
+
+            <section class="people-card">
+
+                <div class="person-row">
+                    <div class="avatar me">ME</div>
+
+                    <div class="person-info">
+                        <h4>You <span class="payer">Payer</span></h4>
+                        <p>Paid ₹180.00<br>total</p>
+                    </div>
+
+                    <div class="person-amount">₹45.00<br>share</div>
+                    <span class="status settled">✓ Settled</span>
+                </div>
+
+                <div class="person-row">
+                    <div class="avatar leo">LM</div>
+
+                    <div class="person-info">
+                        <h4>Leo M.</h4>
+                        <p>Pending<br>payment</p>
+                    </div>
+
+                    <div class="person-amount">owes<br>₹45.00</div>
+                    <span class="status nudge">Nudge</span>
+                </div>
+
+                <div class="person-row">
+                    <div class="avatar maya">MP</div>
+
+                    <div class="person-info">
+                        <h4>Maya P.</h4>
+                        <p>Pending<br>payment</p>
+                    </div>
+
+                    <div class="person-amount">owes<br>₹45.00</div>
+                    <span class="status nudge">Nudge</span>
+                </div>
+
+                <div class="person-row">
+                    <div class="avatar alex">AM</div>
+
+                    <div class="person-info">
+                        <h4>Alex M.</h4>
+                        <p>Pending<br>payment</p>
+                    </div>
+
+                    <div class="person-amount">owes<br>₹45.00</div>
+                    <span class="status nudge">Nudge</span>
+                </div>
+
+            </section>
+
+            <!-- Comments -->
+            <div class="section-heading comments-heading">
+                <h3>Squad Comments &amp; Audit</h3>
+                <span class="notes-count">2 Notes</span>
+            </div>
+
+            <section class="comment-card">
+                <div class="comment-top">
+                    <div class="small-avatar leo">LM</div>
+                    <h4>Leo M.</h4>
+                    <span class="time">8m ago</span>
+                </div>
+
+                <p class="comment-text">
+                    Seafood was legendary! Sending ₹45 in 10 mins🙌
+                </p>
+            </section>
+
+            <section class="comment-card">
+                <div class="comment-top">
+                    <div class="small-avatar maya">MP</div>
+                    <h4>Maya P.</h4>
+                    <span class="time">15m ago</span>
+                </div>
+
+                <p class="comment-text">Approved! Clean split.</p>
+            </section>
+
+            <!-- Quick Reactions -->
+            <section class="reactions">
+                <strong>Quick React:</strong>
+                <div class="reaction-buttons">
+                    <button>👍</button>
+                    <button>🏝️</button>
+                    <button>🦞</button>
+                    <button>ϟ</button>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Bottom Action Area -->
+        <section class="bottom-actions">
+            <button class="approve-btn">⊙ &nbsp; Approve Split (₹45.00)</button>
+            <button class="dispute-btn">Suggest change or dispute</button>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="bottom-nav">
+            <a href="#">
+                <span class="nav-icon">⊞</span>
+                <span>Home</span>
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♧</span>
+                <span>Groups</span>
+            </a>
+
+            <a href="#" class="scan-item">
+                <span class="scan-icon">▦</span>
+                <span>Scan</span>
+            </a>
+
+            <a href="#" class="active">
+                <span class="nav-icon">▣</span>
+                <span>Balances</span>
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♙</span>
+                <span>Profile</span>
+            </a>
+        </nav>
+
+    </div>
+
+</body>
+</html>
