@@ -1,0 +1,737 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: #202124;
+}
+
+:is(button,a.se-action,label.se-choice) {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+    width: 100%;
+    max-width: 425px;
+    min-height: 100vh;
+    margin: auto;
+    background: #f7f8fa;
+    padding-bottom: 125px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+
+    background: #ffffff;
+}
+
+.header h1 {
+    flex: 1;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.icon-btn {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background: #f0f2f4;
+
+    font-size: 25px;
+    color: #252525;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-btn {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #050505;
+    color: white;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   TRIP STATUS
+========================= */
+
+.trip-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    height: 52px;
+    padding: 8px 18px;
+
+    background: white;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.active-trip {
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: #d9f9e3;
+    color: #008045;
+
+    font-size: 11px;
+}
+
+.invite-btn {
+    margin-left: auto;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    background: #e9ebed;
+
+    color: #222;
+    font-weight: bold;
+}
+
+
+/* =========================
+   GROUP CARD
+========================= */
+
+.group-card {
+    margin: 0 32px 20px;
+
+    background: white;
+
+    border-radius: 0 0 35px 35px;
+
+    overflow: hidden;
+}
+
+
+/* Cover */
+
+.cover {
+    position: relative;
+
+    height: 170px;
+
+    overflow: hidden;
+}
+
+.cover :is(img,.ref-photo) {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.cover-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 35%,
+        rgba(0, 0, 0, 0.55)
+    );
+}
+
+.trip-label {
+    position: absolute;
+    left: 17px;
+    bottom: 48px;
+
+    padding: 4px 10px;
+
+    border-radius: 12px;
+
+    background: #6e6e6e;
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.cover h2 {
+    position: absolute;
+    left: 17px;
+    bottom: 10px;
+
+    color: white;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* Avatars */
+
+.avatars {
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.avatars :is(img,.ref-photo),
+.avatars span {
+    width: 38px;
+    height: 38px;
+
+    margin-left: -8px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.avatars :is(img,.ref-photo) {
+    object-fit: cover;
+}
+
+.avatars span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #050505;
+    color: white;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TOTALS
+========================= */
+
+.totals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+
+    padding: 17px 14px 15px;
+}
+
+.total-box,
+.balance-box {
+    min-height: 100px;
+    padding: 13px;
+
+    background: #f0f2f4;
+}
+
+.balance-box {
+    background: #d9f9e3;
+}
+
+.total-box p,
+.balance-box p {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.balance-box p {
+    color: #007b3e;
+}
+
+.total-box strong,
+.balance-box strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 22px;
+}
+
+.balance-box strong {
+    color: #008044;
+}
+
+.total-box small,
+.balance-box small {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    padding: 0 36px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.section-title > span {
+    margin-left: auto;
+
+    color: #555;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.section-title a {
+    color: #008044;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.friends {
+    padding: 5px 9px;
+
+    border-radius: 15px;
+
+    background: #e4e5e7;
+}
+
+
+/* =========================
+   MEMBERS
+========================= */
+
+.members {
+    display: flex;
+    gap: 8px;
+}
+
+.member-card {
+    width: 145px;
+
+    padding: 15px 10px;
+
+    background: white;
+
+    text-align: center;
+}
+
+.member-image {
+    position: relative;
+
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 7px;
+}
+
+.member-image :is(img,.ref-photo) {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.member-image span {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+
+    width: 16px;
+    height: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #f2aaaa;
+    color: #b90000;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.member-card h3 {
+    margin-bottom: 5px;
+
+    font-size: 13px;
+}
+
+.member-card p {
+    margin-bottom: 10px;
+
+    color: #dc1717;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.member-card :is(button,a.se-action,label.se-choice) {
+    width: 100%;
+
+    padding: 6px;
+
+    border-radius: 20px;
+
+    background: #ffeded;
+    color: #c50000;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MAP BUTTON
+========================= */
+
+.map-button {
+    display: block;
+
+    width: calc(100% - 64px);
+    margin: 5px auto 25px;
+
+    padding: 16px;
+
+    border-radius: 35px;
+
+    background: #58f58d;
+
+    color: #062f19;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    box-shadow: 0 7px 20px rgba(50, 230, 120, 0.25);
+}
+
+
+/* =========================
+   EXPENSE FILTERS
+========================= */
+
+.filters {
+    display: flex;
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
+.filter {
+    padding: 8px 14px;
+
+    border-radius: 25px;
+
+    background: #eef0f2;
+
+    color: #444;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.filter.active {
+    background: #050505;
+    color: white;
+}
+
+
+/* =========================
+   EXPENSE
+========================= */
+
+.expense {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-height: 73px;
+
+    margin-bottom: 8px;
+    padding: 10px;
+
+    background: white;
+
+    border-left: 6px solid #008044;
+}
+
+.expense.owed {
+    border-left-color: #d90000;
+}
+
+.expense-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #e5f9ea;
+
+    font-size: 20px;
+}
+
+.expense.owed .expense-icon {
+    background: #f0f1f3;
+}
+
+.expense-info {
+    min-width: 0;
+    flex: 1;
+}
+
+.expense-info h3 {
+    margin-bottom: 4px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.expense-info p {
+    color: #555;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.expense-info p b {
+    color: #008044;
+}
+
+.expense-value {
+    text-align: right;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.expense-value small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #333;
+
+    font-size: 9px;
+}
+
+.positive {
+    color: #008044;
+}
+
+.negative {
+    color: #dc0000;
+}
+
+
+/* =========================
+   BOTTOM ACTIONS
+========================= */
+
+.bottom-actions {
+    padding: 0 32px;
+    margin-top: 25px;
+}
+
+.add-expense {
+    width: 100%;
+
+    padding: 17px;
+
+    border-radius: 35px;
+
+    background: #58f58d;
+
+    color: #062f19;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    box-shadow: 0 7px 20px rgba(50, 230, 120, 0.25);
+}
+
+.settle {
+    width: 100%;
+
+    margin-top: 12px;
+
+    background: transparent;
+
+    color: #4d4d4d;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 425px;
+
+    height: 83px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: white;
+
+    border-top: 1px solid #eee;
+
+    z-index: 10;
+}
+
+.bottom-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    color: #4b5752;
+
+    font-size: 11px;
+}
+
+.bottom-nav a span {
+    font-size: 22px;
+}
+
+.bottom-nav .selected {
+    color: #008044;
+}
+
+
+/* Scan :is(button,a.se-action,label.se-choice) */
+
+.bottom-nav .scan {
+    width: 58px;
+    height: 58px;
+
+    margin-top: -28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #0bb982;
+    color: white;
+
+    font-size: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 150, 100, 0.25);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+    .header h1 {
+        font-size: 19px;
+    }
+
+    .group-card {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .map-button {
+        width: calc(100% - 48px);
+    }
+
+    .members {
+        overflow-x: auto;
+    }
+
+    .member-card {
+        flex-shrink: 0;
+    }
+
+    .expense-info h3 {
+        font-size: 14px;
+    }
+
+    .expense-value {
+        font-size: 12px;
+    }
+}

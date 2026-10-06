@@ -1,0 +1,306 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fa;
+    color: #191b1e;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 30px 20px 17.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top navigation */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.tour-badge,
+.skip-btn {
+    padding: 6.5px 12.5px;
+    border-radius: 20px;
+    background: #f1f2f4;
+    font-size: 8.5px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 1px 2.5px #00000005;
+}
+
+.tour-badge {
+    color: #00783d;
+}
+
+.skip-btn {
+    background: white;
+    color: #48494d;
+    text-decoration: none;
+}
+
+/* Main tour card */
+
+.tour-card {
+    margin-top: 90px;
+    padding: 14px;
+    border-radius: 30px;
+    background:
+        radial-gradient(circle at 100% 0%, #c9ffdc, transparent 45%),
+        radial-gradient(circle at 0% 100%, #caffd9, transparent 40%),
+        white;
+    box-shadow: 0 2.5px 4px #00000015;
+    text-align: center;
+}
+
+/* Friends image */
+
+.image-section {
+    position: relative;
+    width: 100%;
+}
+
+.friends-image {
+    display: block;
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+}
+
+/* Floating debt cards */
+
+.debt-card {
+    position: absolute;
+    top: 17.5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 8px;
+    background: white;
+    border-radius: 22.5px;
+    box-shadow: 0 2px 7.5px #00000012;
+    text-align: left;
+}
+
+.debt-left {
+    left: -2.5px;
+}
+
+.debt-right {
+    right: -2.5px;
+    top: 32.5px;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+}
+
+.green {
+    background: #00783d;
+}
+
+.red {
+    background: #c81920;
+}
+
+.debt-card small {
+    display: block;
+    color: #48494d;
+    font-size: 7.5px;
+    white-space: nowrap;
+}
+
+.debt-card strong {
+    display: block;
+    font-size: 11px;
+}
+
+.green-text {
+    color: #00783d;
+}
+
+.red-text {
+    color: #c81920;
+}
+
+/* Event information */
+
+.event-label {
+    position: absolute;
+    left: 5%;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4.5px;
+    padding: 7px 9px;
+    background: white;
+    border-radius: 20px;
+    font-size: 8px;
+    white-space: nowrap;
+    box-shadow: 0 1.5px 4px #00000010;
+}
+
+.debt-label {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    padding: 8px 11px;
+    background: black;
+    color: #4df68a;
+    border-radius: 20px;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+/* Guarantee and text */
+
+.guarantee {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 11px;
+    border-radius: 20px;
+    background: #ccfbd9;
+    color: #00783d;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 12.5px;
+    font-size: clamp(15px, 5vw, 24px);
+    line-height: 1.2;
+    letter-spacing: -0.75px;
+}
+
+.description {
+    max-width: 300px;
+    margin: 10px auto 0;
+    color: #55565b;
+    font-size: clamp(9.5px, 3vw, 15px);
+    line-height: 1.5;
+}
+
+/* Progress dots */
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7.5px;
+    margin-top: 17.5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #dfe1e4;
+    border-radius: 10px;
+}
+
+.dot.active {
+    width: 32.5px;
+    background: #00783d;
+    box-shadow: 0 1.5px 5px #00783d30;
+}
+
+/* Social proof */
+
+.social-proof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5px;
+    align-self: center;
+    margin-top: 14px;
+    padding: 7.5px 12.5px;
+    background: #f0f1f3;
+    border-radius: 25px;
+    color: #48494d;
+    font-size: 8.5px;
+    white-space: nowrap;
+}
+
+.mini-avatars {
+    display: flex;
+}
+
+.mini-avatars span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    margin-left: -5px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    background: #dfe0e5;
+    color: #191b1e;
+}
+
+.mini-avatars span:first-child {
+    margin-left: 0;
+    background: #9df5b6;
+    color: #00783d;
+}
+
+.mini-avatars span:nth-child(2) {
+    background: #54f68a;
+}
+
+/* Bottom buttons */
+
+.bottom-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 50px;
+}
+
+.bottom-buttons :is(button,a.se-action,label.se-choice) {
+    width: 100%;
+    min-height: 45px;
+    border: none;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.next-btn {
+    background: #00783d;
+    color: white;
+    box-shadow: 0 5px 15px #00a64a35;
+}
+
+.next-btn:hover {
+    background: #005f2d;
+}
+
+.account-btn {
+    background: white;
+    color: #191b1e;
+    box-shadow: 0 1.5px 2.5px #00000008;
+}
+
+/* Mobile responsive design */
+

@@ -1,0 +1,250 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 15% 25%, #c5f9dc, transparent 40%),
+        radial-gradient(circle at 85% 65%, #c8f8d9, transparent 40%),
+        #f7f8fa;
+    color: #191b1e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 780px;
+    min-height: 100vh;
+    padding: 50px 24px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.badge {
+    background: #f2f3f5;
+    color: #00783d;
+    padding: 15px 25px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 3px 8px #00000008;
+}
+
+.logo {
+    position: relative;
+    margin-top: 62px;
+    width: 225px;
+    height: 225px;
+    border-radius: 65px;
+    background: linear-gradient(135deg, #ffffff, #e4fbea);
+    box-shadow: 0 15px 30px #00833d25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #006b35 0deg 75deg,
+        #ffffff 75deg 82deg,
+        #56fa91 82deg 245deg,
+        #ffffff 245deg 255deg,
+        #9df5b6 255deg 325deg,
+        #ffffff 325deg 360deg
+    );
+    position: relative;
+}
+
+.chart::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #00783d;
+    border: 5px solid white;
+    border-radius: 50%;
+    top: 43%;
+    left: 43%;
+}
+
+.rupee {
+    position: absolute;
+    top: 25px;
+    left: 47px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bolt {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #4df68a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    box-shadow: 0 5px 15px #00a74c30;
+}
+
+h1 {
+    margin-top: 65px;
+    font-size: clamp(42px, 7vw, 64px);
+    letter-spacing: -2px;
+    font-weight: 750;
+}
+
+h1 span {
+    color: #00783d;
+}
+
+.tagline {
+    margin-top: 22px;
+    font-size: clamp(23px, 4vw, 35px);
+    color: #48494d;
+}
+
+.subtitle {
+    margin-top: 12px;
+    font-size: clamp(21px, 3.5vw, 31px);
+}
+
+.trust {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    gap: 15px;
+    font-size: 19px;
+    color: #48494d;
+    font-weight: bold;
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    margin-left: -12px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background: #e0e1e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #202124;
+}
+
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.avatar:nth-child(2) {
+    background: #9df5b6;
+    color: #00783d;
+}
+
+.trust strong {
+    color: #00783d;
+    font-weight: normal;
+}
+
+.actions {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 70px;
+}
+
+.start-btn {
+    display: block;
+    width: 100%;
+    padding: 30px 15px;
+    background: #007638;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    font-size: 27px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 15px 30px #006b3530;
+    transition: 0.2s;
+}
+
+.start-btn:hover {
+    background: #005f2d;
+    transform: translateY(-2px);
+}
+
+.login {
+    margin-top: 50px;
+    color: #48494d;
+    font-size: 20px;
+}
+
+.login a {
+    color: #00783d;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 45px 24px 35px;
+    }
+
+    .badge {
+        padding: 13px 17px;
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+        margin-top: 55px;
+        border-radius: 60px;
+    }
+
+    .trust {
+        font-size: 16px;
+        gap: 12px;
+        margin-top: 50px;
+    }
+
+    .avatar {
+        width: 55px;
+        height: 55px;
+    }
+
+    .start-btn {
+        padding: 27px 12px;
+        font-size: 24px;
+    }
+
+    .login {
+        font-size: 17px;
+        margin-top: 48px;
+    }
+}
+
+
