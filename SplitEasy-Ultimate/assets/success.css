@@ -1,0 +1,104 @@
+/* FRAME 2: payment-complete.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #98f6b2 0%, #c8fbd6 48%, #ffffff 100%);
+}
+
+.content {
+  width: 100%;
+  max-width: 400px;
+  min-height: 100vh;
+  padding: 140px 32px 40px;
+  text-align: center;
+}
+
+.icon-wrap {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(17,185,135,.18);
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #12b887;
+  color: #fff;
+  font-size: 42px;
+}
+
+h1 {
+  color: #103b31;
+  font-size: 29px;
+  margin-bottom: 14px;
+}
+
+.message,
+.transaction {
+  color: #5c7680;
+  line-height: 1.4;
+}
+
+.message {
+  font-size: 15px;
+}
+
+.transaction {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.details {
+  margin-top: 28px;
+  padding: 20px 18px;
+  border-radius: 12px;
+  background: #f4f6f8;
+  text-align: left;
+}
+
+.details h2 {
+  margin-bottom: 16px;
+  color: #1f2a36;
+  font-size: 13px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+  color: #6f8097;
+  font-size: 13px;
+}
+
+.continue-btn {
+  width: calc(100% - 20px);
+  min-height: 49px;
+  margin-top: 46px;
+  border: 0;
+  border-radius: 6px;
+  background: #007a3d;
+  color: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
