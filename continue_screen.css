@@ -1,0 +1,710 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   APP
+===================================================== */
+
+.app {
+
+    width: 402px;
+    height: 874px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin: auto;
+
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   CENTER ILLUSTRATION
+===================================================== */
+
+.illustration {
+
+    position: absolute;
+
+    width: 125px;
+    height: 125px;
+
+    left: 50%;
+
+    top: 247px;
+
+    transform: translateX(-50%);
+}
+
+
+/* =====================================================
+   GREEN ARC
+===================================================== */
+
+.arc {
+
+    position: absolute;
+
+    width: 124px;
+    height: 62px;
+
+    top: 0;
+    left: 0;
+
+    border-radius:
+        70px 70px 0 0;
+
+    border-top: 9px solid #72e9bd;
+
+    border-left: 9px solid #72e9bd;
+
+    border-right: 9px solid #72e9bd;
+
+    border-bottom: none;
+
+    transform: rotate(0deg);
+
+    opacity: 0.95;
+}
+
+
+/* =====================================================
+   ILLUSTRATION
+===================================================== */
+
+.illustration-icon {
+
+    position: absolute;
+
+    width: 78px;
+    height: 78px;
+
+    left: 24px;
+    top: 28px;
+}
+
+
+/* =====================================================
+   PAPER
+===================================================== */
+
+.paper {
+
+    position: absolute;
+
+    width: 48px;
+    height: 53px;
+
+    left: 14px;
+    top: 8px;
+
+    background: #a7d93e;
+
+    border-radius: 4px;
+
+    transform: rotate(-2deg);
+
+    box-shadow:
+        2px 3px 0 #78a72b;
+}
+
+
+.paper-line {
+
+    position: relative;
+
+    width: 28px;
+    height: 2px;
+
+    margin-left: 9px;
+    margin-top: 12px;
+
+    background: #345e24;
+
+}
+
+
+.paper-line + .paper-line {
+
+    margin-top: 6px;
+}
+
+
+.paper-line.short {
+
+    width: 20px;
+}
+
+
+/* =====================================================
+   GREEN SHAPE
+===================================================== */
+
+.green-shape {
+
+    position: absolute;
+
+    width: 32px;
+    height: 38px;
+
+    right: 8px;
+    top: 20px;
+
+    background: #54bd4b;
+
+    border-radius: 7px;
+
+    transform: rotate(15deg);
+}
+
+
+/* =====================================================
+   YELLOW SHAPE
+===================================================== */
+
+.yellow-shape {
+
+    position: absolute;
+
+    width: 28px;
+    height: 32px;
+
+    left: 1px;
+    bottom: 6px;
+
+    background: #ffd447;
+
+    border-radius: 50%;
+
+    transform: rotate(-20deg);
+}
+
+
+/* =====================================================
+   BLUE SHAPE
+===================================================== */
+
+.blue-shape {
+
+    position: absolute;
+
+    width: 18px;
+    height: 37px;
+
+    right: 12px;
+    bottom: 2px;
+
+    background: #35b9d4;
+
+    border-radius: 8px;
+
+    transform: rotate(-18deg);
+}
+
+
+/* =====================================================
+   DECORATIVE DOTS
+===================================================== */
+
+.small-dot {
+
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+}
+
+
+.dot-one {
+
+    background: #ff5757;
+
+    left: 0;
+    top: 17px;
+}
+
+
+.dot-two {
+
+    background: #ffbd20;
+
+    right: 0;
+    top: 4px;
+}
+
+
+.dot-three {
+
+    background: #ff6464;
+
+    right: 2px;
+    bottom: 20px;
+}
+
+
+/* =====================================================
+   CONTINUE BUTTON
+===================================================== */
+
+.continue-btn {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 447px;
+
+    transform: translateX(-50%);
+
+    width: 282px;
+
+    height: 52px;
+
+    background: #ffffff;
+
+    border: 1.5px solid #00d89a;
+
+    border-radius: 6px;
+
+    color: #00ce92;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.continue-btn:hover {
+
+    background: #effff9;
+}
+
+
+/* =====================================================
+   BOTTOM GRADIENT
+===================================================== */
+
+.bottom-gradient {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 65px;
+
+    width: 100%;
+
+    height: 230px;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,0),
+            rgba(174,255,210,0.55),
+            rgba(93,244,145,0.92)
+        );
+
+}
+
+
+/* =====================================================
+   BOTTOM NAVIGATION
+===================================================== */
+
+.bottom-nav {
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 66px;
+
+    background: rgba(255,255,255,0.96);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    z-index: 10;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+/* =====================================================
+   NAV ITEM
+===================================================== */
+
+.nav-item {
+
+    width: 20%;
+
+    height: 66px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #3d4945;
+
+}
+
+
+.nav-item.active {
+
+    color: #00895f;
+
+}
+
+
+.nav-label {
+
+    margin-top: 4px;
+
+    font-size: 11px;
+
+    line-height: 12px;
+}
+
+
+/* =====================================================
+   NAV ICON
+===================================================== */
+
+.nav-icon {
+
+    width: 23px;
+    height: 23px;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   HOME ICON
+===================================================== */
+
+.home-icon {
+
+    display: grid;
+
+    grid-template-columns: 8px 8px;
+    grid-template-rows: 8px 8px;
+
+    gap: 4px;
+
+    justify-content: center;
+
+    align-content: center;
+}
+
+
+.home-icon span {
+
+    width: 8px;
+    height: 8px;
+
+    border: 2px solid currentColor;
+
+}
+
+
+/* =====================================================
+   GROUP ICON
+===================================================== */
+
+.groups-icon {
+
+    position: relative;
+}
+
+
+.person {
+
+    position: absolute;
+
+    width: 9px;
+    height: 9px;
+
+    border: 2px solid currentColor;
+
+    border-radius: 50%;
+
+    left: 7px;
+    top: 2px;
+}
+
+
+.person::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 15px;
+    height: 7px;
+
+    border: 2px solid currentColor;
+
+    border-bottom: none;
+
+    border-radius: 10px 10px 0 0;
+
+    left: -5px;
+    top: 10px;
+}
+
+
+.person.small {
+
+    width: 7px;
+    height: 7px;
+
+    left: 0;
+    top: 7px;
+}
+
+
+.person.small::after {
+
+    width: 11px;
+    height: 5px;
+
+    left: -4px;
+    top: 7px;
+}
+
+
+/* =====================================================
+   SCAN
+===================================================== */
+
+.scan-nav {
+
+    position: relative;
+
+    justify-content: flex-start;
+
+    padding-top: 0;
+}
+
+
+.scan-button {
+
+    position: absolute;
+
+    width: 57px;
+    height: 57px;
+
+    top: -25px;
+
+    border-radius: 50%;
+
+    background: #05bd86;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #075c4a;
+
+    box-shadow:
+        0 5px 14px rgba(0,0,0,.12);
+}
+
+
+.scan-symbol {
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+.scan-nav .nav-label {
+
+    position: absolute;
+
+    bottom: 9px;
+}
+
+
+/* =====================================================
+   BALANCE ICON
+===================================================== */
+
+.balance-icon {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.wallet {
+
+    width: 18px;
+    height: 14px;
+
+    border: 2px solid currentColor;
+
+    border-radius: 2px;
+
+    position: relative;
+}
+
+
+.wallet::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 5px;
+
+    right: -3px;
+    top: 3px;
+
+    border: 2px solid currentColor;
+
+    border-radius: 3px;
+
+    background: white;
+}
+
+
+.wallet::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    right: 0;
+    top: 5px;
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.profile-icon {
+
+    position: relative;
+}
+
+
+.profile-head {
+
+    position: absolute;
+
+    width: 9px;
+    height: 9px;
+
+    left: 7px;
+    top: 1px;
+
+    border: 2px solid currentColor;
+
+    border-radius: 50%;
+}
+
+
+.profile-body {
+
+    position: absolute;
+
+    width: 20px;
+    height: 10px;
+
+    left: 1px;
+    bottom: 2px;
+
+    border: 2px solid currentColor;
+
+    border-radius: 12px 12px 5px 5px;
+
+    border-bottom-width: 2px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 402px) {
+
+    .app {
+
+        width: 100vw;
+
+        height: 100vh;
+
+        min-height: 700px;
+
+    }
+
+}
+
+
+@media (min-width: 403px) {
+
+    body {
+
+        background: #eeeeee;
+
+    }
+
+}
