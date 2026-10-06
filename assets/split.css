@@ -1,0 +1,708 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #007f43;
+    --green-dark: #006b39;
+    --light-green: #d9ffe7;
+    --background: #f7f8f9;
+    --text: #171717;
+    --gray: #6c6c6c;
+    --border: #eeeeee;
+    --white: #ffffff;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #e9eceb;
+    color: var(--text);
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+    width: 100%;
+    max-width: 448px;
+    min-height: 100vh;
+    margin: auto;
+    background: var(--background);
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 70px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255,255,255,0.92);
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.icon-btn,
+.profile-btn {
+    border: none;
+    background: #f1f3f3;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-btn i {
+    font-size: 17px;
+}
+
+.profile-btn {
+    background: #000;
+    color: white;
+}
+
+.profile-btn i {
+    font-size: 16px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    padding: 8px 16px 105px;
+}
+
+
+/* =========================
+   BILL CARD
+========================= */
+
+.bill-card {
+    position: relative;
+    min-height: 190px;
+    background: linear-gradient(
+        135deg,
+        #ffffff 55%,
+        #caffdc
+    );
+
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    gap: 14px;
+    overflow: hidden;
+}
+
+.restaurant-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+
+    border-radius: 50%;
+    background: #eeeeee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+}
+
+.bill-info {
+    flex: 1;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.green-dot {
+    width: 9px;
+    height: 9px;
+    background: var(--green);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bill-info h2 {
+    font-size: 21px;
+    line-height: 1.25;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.bill-info p {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.35;
+    color: #555;
+}
+
+.total {
+    position: absolute;
+    right: 17px;
+    top: 38px;
+
+    text-align: right;
+}
+
+.total span {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    color: #555;
+}
+
+.total strong {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   ALLOCATION
+========================= */
+
+.allocation-card {
+    margin-top: 3px;
+
+    background: white;
+    border-radius: 25px;
+
+    padding: 14px;
+}
+
+.allocation-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allocation-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.allocation-text p {
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.allocation-text strong {
+    color: var(--green);
+}
+
+.allocation-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.allocation-buttons :is(button,a.se-action,label.se-choice) {
+    border: none;
+    background: #eeeeef;
+
+    padding: 6px 11px;
+
+    border-radius: 15px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.progress {
+    height: 7px;
+    background: #e7e9e8;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 100%;
+    height: 100%;
+    background: var(--green);
+    border-radius: 20px;
+}
+
+
+/* =========================
+   PARTICIPANTS HEADING
+========================= */
+
+.participants-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 17px 4px 9px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.participants-heading strong {
+    color: var(--green);
+    font-size: 11px;
+}
+
+
+/* =========================
+   PARTICIPANT CARDS
+========================= */
+
+.participants {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.participant-card {
+    min-height: 73px;
+
+    background: white;
+    border-radius: 28px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 15px 10px 17px;
+
+    position: relative;
+
+    box-shadow: 0 1px 1px rgba(0,0,0,.02);
+}
+
+.participant-card::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 6px;
+    height: 100%;
+
+    background: var(--green);
+
+    border-radius: 10px 0 0 10px;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar,
+.participant-image {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    border-radius: 50%;
+
+    overflow: visible;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar :is(img,.ref-photo) {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.participant-image.you {
+    background: #000;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+}
+
+.star {
+    position: absolute;
+
+    right: -3px;
+    bottom: -1px;
+
+    width: 19px;
+    height: 19px;
+
+    border-radius: 50%;
+
+    background: var(--green);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   PARTICIPANT INFO
+========================= */
+
+.participant-info {
+    margin-left: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+.name-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.participant-info h3 {
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+.participant-info p {
+    font-size: 12px;
+    color: #555;
+    margin-top: 3px;
+}
+
+.host {
+    background: #eeeeef;
+    color: #777;
+
+    padding: 3px 7px;
+
+    border-radius: 10px;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   AMOUNTS
+========================= */
+
+.amount,
+.participant-amount strong {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.participant-amount {
+    text-align: right;
+    margin-right: 12px;
+}
+
+.participant-amount span {
+    display: block;
+    color: var(--green);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    margin-top: 4px;
+}
+
+
+/* =========================
+   CHECK BUTTON
+========================= */
+
+.check-btn,
+.lock-btn {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.check-btn {
+    background: var(--green);
+    color: white;
+}
+
+.lock-btn {
+    background: #caffd9;
+    color: var(--green);
+}
+
+
+/* =========================
+   ITEMIZED CARD
+========================= */
+
+.itemized-card {
+    margin-top: 14px;
+
+    min-height: 62px;
+
+    padding: 10px 14px;
+
+    border-radius: 32px;
+
+    background: #eef0f1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+}
+
+.receipt-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemized-card p {
+    font-size: 12px;
+}
+
+.itemized-card a {
+    color: var(--green);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.arrow {
+    margin-left: auto;
+    color: #555;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CONFIRM BUTTON
+========================= */
+
+.confirm-btn {
+    width: 100%;
+    height: 57px;
+
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: var(--green);
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(0, 127, 67, .25);
+
+    transition: .2s ease;
+}
+
+.confirm-btn:hover {
+    background: var(--green-dark);
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BOTTOM NAV
+========================= */
+
+.bottom-nav {
+    position: fixed;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 448px;
+
+    height: 72px;
+
+    background: rgba(255,255,255,.96);
+
+    border-top: 1px solid #e8e8e8;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.bottom-nav a {
+    width: 20%;
+
+    text-decoration: none;
+
+    color: #4f5653;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 10px;
+}
+
+.bottom-nav i {
+    font-size: 18px;
+}
+
+.bottom-nav .active {
+    color: var(--green);
+}
+
+
+/* =========================
+   SCAN BUTTON
+========================= */
+
+.bottom-nav .scan {
+    position: relative;
+    height: 100%;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+}
+
+.scan-circle {
+    position: absolute;
+
+    top: -25px;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #08c986;
+
+    color: #003d28;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+
+.scan-circle i {
+    font-size: 22px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 600px) {
+
+    body {
+        padding: 20px 0;
+    }
+
+    .app {
+        min-height: 900px;
+        border-radius: 20px;
+        box-shadow: 0 15px 50px rgba(0,0,0,.15);
+    }
+
+    .bottom-nav {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+@media (max-width: 370px) {
+
+    .bill-card {
+        padding: 16px;
+    }
+
+    .restaurant-icon {
+        width: 43px;
+        height: 43px;
+        min-width: 43px;
+    }
+
+    .bill-info h2 {
+        font-size: 18px;
+    }
+
+    .total strong {
+        font-size: 20px;
+    }
+
+    .participant-info h3 {
+        font-size: 13px;
+    }
+
+    .amount,
+    .participant-amount strong {
+        font-size: 15px;
+    }
+
+    .allocation-buttons {
+        display: none;
+    }
+}
