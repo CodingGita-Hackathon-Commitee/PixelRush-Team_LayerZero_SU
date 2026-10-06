@@ -1,17 +1,19 @@
-<!-- FRAME 2: payment-complete.html -->
-<!DOCTYPE html>
+<!doctype html>
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payment Complete</title>
-  <link rel="stylesheet" href="style.css">
+  
+<link rel="stylesheet" href="../assets/success.css"><link rel="stylesheet" href="../assets/clone.css"><link rel="stylesheet" href="../assets/pro.css">
 </head>
-<body>
+<body class="screen-success">
 
 <div class="page">
 
-  <main class="content">
+  <main class="content" id="main">
 
     <div class="icon-wrap">
       <div class="icon">✓</div>
@@ -40,11 +42,12 @@
       </div>
     </section>
 
-    <button class="continue-btn">Continue to Dashboard</button>
+    <a class="continue-btn se-action" href="../home.html">Continue to Dashboard</a>
 
   </main>
 
-</div>
+<aside id="options" class="se-sheet"><a href="#main" class="sheet-close">×</a><h2>Squad options</h2><a href="../GroupDetails/index.html">Open your group →</a><a href="../Expense_history/expense-history.html">Expense history →</a><a href="../SupportHelp/index.html">Help & support →</a></aside><aside id="cover-options" class="se-sheet"><a href="#main" class="sheet-close">×</a><h2>Trip cover</h2><p>The Goa cover is selected for this HTML/CSS preview.</p><label>Choose a photo <input type="file" accept="image/*"></label></aside></div>
 
+<script src="../assets/pro.js" defer></script>
 </body>
 </html>

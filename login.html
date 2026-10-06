@@ -1,17 +1,19 @@
-```html
-<!DOCTYPE html>
+<!doctype html>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SplitEasy - Login</title>
-    <link rel="stylesheet" href="login.css">
+    
+<link rel="stylesheet" href="assets/login.css"><link rel="stylesheet" href="assets/clone.css"><link rel="stylesheet" href="assets/pro.css">
 </head>
-<body>
+<body class="screen-login">
 
     <div class="container">
 
-        <!-- Logo -->
+        
         <div class="logo">
             <div class="logo-icon">
                 <span></span>
@@ -20,7 +22,7 @@
             <div class="fast-badge">🟢 FAST</div>
         </div>
 
-        <!-- Heading -->
+        
         <div class="portal-badge">
             <span class="portal-icon">◉</span>
             Squad Portal
@@ -33,10 +35,10 @@
             active splits and settle-ups.
         </p>
 
-        <!-- Login Form -->
-        <main class="login-card">
+        
+        <main class="login-card" id="main">
 
-            <form>
+            <form action="home.html">
 
                 <div class="field-heading">
                     <label for="email">Email or Phone Number</label>
@@ -45,33 +47,33 @@
 
                 <div class="input-box">
                     <span class="input-icon">@</span>
-                    <input
-                        type="text"
-                        id="email"
-                        placeholder="alex.turner@squad.io"
-                    >
+                    <input type="text" id="email" placeholder="alex.turner@squad.io" required>
                     <span class="verified">✓</span>
                 </div>
 
                 <div class="field-heading password-heading">
                     <label for="password">Password or Security Code</label>
-                    <a href="#">Forgot password?</a>
+                    <a href="SupportHelp/index.html">Forgot password?</a>
                 </div>
 
                 <div class="input-box">
                     <span class="input-icon">♙</span>
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="••••••••••••"
-                    >
-                    <span class="eye-icon">◎</span>
+                    <input type="password" id="password" placeholder="••••••••••••" required>
+                    <span class="eye-icon"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                 </div>
 
-                <!-- Remember Device -->
-                <div class="remember-row">
+                
+                
+
+                <button type="submit" class="login-btn">
+                    Log In <span>⚡</span>
+                </button>
+
+            </form>
+
+        </main><div class="remember-row">
                     <div class="remember-left">
-                        <span class="remember-dot"></span>
+                        <input class="remember-dot" type="checkbox" checked aria-label="Remember squad on this device">
                         <span>Remember squad on this device</span>
                     </div>
 
@@ -81,15 +83,7 @@
                     </div>
                 </div>
 
-                <button type="button" class="login-btn">
-                    Log In <span>⚡</span>
-                </button>
-
-            </form>
-
-        </main>
-
-        <!-- Alternative Login -->
+        
         <div class="divider">
             <span></span>
             <strong>OR 1-TAP FAST CONNECT</strong>
@@ -98,37 +92,38 @@
 
         <div class="social-login">
 
-            <button class="social-btn">
+            <a class="social-btn se-action" href="CreateGroup/index.html">
                 <span class="google-icon">G</span>
                 <strong>Google</strong>
-            </button>
+            </a>
 
-            <button class="social-btn">
+            <a class="social-btn se-action" href="CreateGroup/index.html">
                 <span class="apple-icon">●</span>
                 <strong>Apple</strong>
-            </button>
+            </a>
 
-            <button class="social-btn">
+            <a class="social-btn se-action" href="CreateGroup/index.html">
                 <span class="sms-icon">•••</span>
                 <strong>SMS OTP</strong>
-            </button>
+            </a>
 
         </div>
 
-        <!-- Security Badge -->
+        
         <div class="security-badge">
             <span>♢</span>
             Bank-grade 256-bit encryption
         </div>
 
-        <!-- Sign Up -->
+        
         <p class="signup">
             Don't have an account?
-            <a href="#">Sign up 🚀</a>
+            <a href="signup.html">Sign up 🚀</a>
         </p>
 
-    </div>
+    <aside id="options" class="se-sheet"><a href="#main" class="sheet-close">×</a><h2>Squad options</h2><a href="GroupDetails/index.html">Open your group →</a><a href="Expense_history/expense-history.html">Expense history →</a><a href="SupportHelp/index.html">Help & support →</a></aside><aside id="cover-options" class="se-sheet"><a href="#main" class="sheet-close">×</a><h2>Trip cover</h2><p>The Goa cover is selected for this HTML/CSS preview.</p><label>Choose a photo <input type="file" accept="image/*"></label></aside></div>
 
+<script src="assets/pro.js" defer></script>
 </body>
 </html>
 
