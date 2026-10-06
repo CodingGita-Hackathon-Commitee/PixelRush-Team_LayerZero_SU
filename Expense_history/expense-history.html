@@ -1,0 +1,462 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitEasy - Expense History</title>
+
+    
+<link rel="stylesheet" href="../assets/history.css"><link rel="stylesheet" href="../assets/clone.css"><link rel="stylesheet" href="../assets/pro.css">
+</head>
+
+<body class="screen-history">
+
+<div class="app" id="main">
+
+    
+    <header class="header">
+
+        <div class="brand">
+            <div class="brand-icon"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V8m0 4L5 5m0 5V5h5m2 7 7-7m-5 0h5v5"></path></svg></div>
+
+            <div>
+                <div class="brand-name">SplitEasy</div>
+                <div class="brand-subtitle">EXPENSE HISTORY</div>
+            </div>
+        </div>
+
+        <div class="header-icons">
+            <a class="notification" href="../SupportHelp/index.html" aria-label="support"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14l-2-3V9a5 5 0 0 0-10 0v5l-2 3zm5 3h4M12 2v2"></path></svg></a>
+            <a class="profile" href="../profile.html">♙</a>
+        </div>
+
+    </header>
+
+
+    
+    <section class="title-section">
+
+        <div class="title">
+            <span class="green-dot"></span>
+            Expense History
+        </div>
+
+        <div class="title-actions">
+            <a class="round-button se-action" href="#options">⛶</a>
+            <a class="round-button se-action" href="../SupportHelp/index.html">♢</a>
+        </div>
+
+    </section>
+
+
+    
+    <section class="summary-card">
+
+        <div class="summary-top">
+
+            <div class="trip-name">
+                Goa Trip 🏖️ • 5 Members
+            </div>
+
+            <a class="export se-action" href="../assets/expense-history.csv" download="SplitEasy-expenses.csv">
+                ⇩ Export CSV
+            </a>
+
+        </div>
+
+
+        <div class="summary-values">
+
+            <div class="spent-box">
+
+                <div class="box-label">
+                    TOTAL GROUP SPENT
+                </div>
+
+                <div class="amount">
+                    ₹1,420.50
+                </div>
+
+                <div class="box-label expense-count">
+                    ▤ 14 expenses logged
+                </div>
+
+            </div>
+
+
+            <div class="position-box">
+
+                <div class="position-title">
+
+                    <div class="box-label">
+                        YOUR POSITION
+                    </div>
+
+                    <span>●</span>
+
+                </div>
+
+                <div class="position-amount">
+                    +₹162.25
+                </div>
+
+                <div class="position-status">
+                    ↗ You are owed back
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <div class="search-box">
+
+        <span class="search-icon">⌕</span>
+
+        <input type="text" placeholder="Search Boba, Uber, Seafood, Villa..." aria-label="Search Boba, Uber, Seafood, Villa...">
+
+        <span class="filter">☷</span>
+
+    </div>
+
+
+    
+    <div class="chips">
+
+        <label class="chip se-choice"><input type="radio" name="history-chips" aria-label="♧ All Squad" checked>
+            ♧ All Squad
+        </label>
+
+        <label class="chip se-choice"><input type="radio" name="history-chips" aria-label="You Paid (8)">
+            You Paid (8)
+        </label>
+
+        <label class="chip se-choice"><input type="radio" name="history-chips" aria-label="L
+            Leo">
+            <span class="avatar">L</span>
+            Leo
+        </label>
+
+        <label class="chip se-choice"><input type="radio" name="history-chips" aria-label="M
+            Maya">
+            <span class="avatar green">M</span>
+            Maya
+        </label>
+
+        <label class="chip se-choice"><input type="radio" name="history-chips" aria-label="Alex">
+            Alex
+        </label>
+
+    </div>
+
+
+    
+    <div class="date-heading">
+
+        <div class="date-left">
+            <span class="small-dot"></span>
+            Today, Oct 24
+        </div>
+
+        <span class="total">
+            $242.00 total
+        </span>
+
+    </div>
+
+
+    
+    <a class="expense" href="../expense_review/index.html">
+
+        <div class="expense-icon"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v7m3-7v7M2 3v5a3 3 0 0 0 6 0M5 11v10M18 3c-4 3-4 9 0 9V3v18"></path></svg></div>
+
+        <div class="expense-info">
+
+            <div class="expense-name">
+                Beach Shack Seafood
+            </div>
+
+            <div class="paid">
+                You paid • Curlies Anjuna
+            </div>
+
+            <div class="expense-details">
+                Total bill $180.00 • Split 4<br>
+                ways
+            </div>
+
+        </div>
+
+        <div class="expense-amount">
+
+            <div class="money">
+                +₹135.00
+            </div>
+
+            <span class="status">
+                you get back
+            </span>
+
+        </div>
+
+    </a>
+
+
+    
+    <a class="expense owe" href="../expense_review/index.html">
+
+        <div class="expense-icon"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V4h10v17M3 10h10M1 21h14M13 9h2l2 2v7a2 2 0 0 0 4 0V8l-4-4M17 5v4h4"></path></svg></div>
+
+        <div class="expense-info">
+
+            <div class="expense-name">
+                Scooters Petrol &amp; Oil
+            </div>
+
+            <div class="paid">
+                Paid by Sam • HP Fuel Vangator
+            </div>
+
+            <div class="expense-details">
+                Total bill $62.00 • Split 4 ways
+            </div>
+
+        </div>
+
+        <div class="expense-amount">
+
+            <div class="money">
+                -₹15.50
+            </div>
+
+            <span class="status">
+                you owe
+            </span>
+
+        </div>
+
+    </a>
+
+
+    
+    <div class="date-heading">
+
+        <div class="date-left">
+
+            <span class="small-dot gray"></span>
+
+            Yesterday, Oct 23
+
+        </div>
+
+        <span class="total">
+            3 entries
+        </span>
+
+    </div>
+
+
+    
+    <a class="expense" href="../expense_review/index.html">
+
+        <div class="expense-icon"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg></div>
+
+        <div class="expense-info">
+
+            <div class="expense-name">
+                Leo paid You
+            </div>
+
+            <div class="paid">
+                <span class="settled">
+                    ✓ Settled ✓
+                </span>
+            </div>
+
+            <div class="expense-details">
+                Settled via Squad QR<br>
+                Audit Hash: #SQ-8921-OK
+            </div>
+
+        </div>
+
+        <div class="expense-amount">
+
+            <div class="money">
+                +₹50.00
+            </div>
+
+            <div class="transfer">
+                Direct Transfer
+            </div>
+
+        </div>
+
+    </a>
+
+
+    
+    <a class="expense owe" href="../expense_review/index.html">
+
+        <div class="expense-icon"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg></div>
+
+        <div class="expense-info">
+
+            <div class="expense-name">
+                Sunset Catamaran
+            </div>
+
+            <div class="paid">
+                Paid by Maya • Mandovi Bay
+            </div>
+
+            <div class="expense-details">
+                Total bill $220.00 • Split 4<br>
+                ways
+            </div>
+
+        </div>
+
+        <div class="expense-amount">
+
+            <div class="money">
+                -₹55.00
+            </div>
+
+            <span class="status">
+                you owe
+            </span>
+
+        </div>
+
+    </a>
+
+
+    
+    <a class="expense" href="../expense_review/index.html">
+
+        <div class="expense-icon"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg></div>
+
+        <div class="expense-info">
+
+            <div class="expense-name">
+                Boba &amp; Acai Bowls
+            </div>
+
+            <div class="paid">
+                You paid • Artjuna Cafe
+            </div>
+
+            <div class="expense-details">
+                Total bill $34.00 • Split<br>
+                unevenly
+            </div>
+
+        </div>
+
+        <div class="expense-amount">
+
+            <div class="money">
+                +₹25.50
+            </div>
+
+            <span class="status">
+                you get back
+            </span>
+
+        </div>
+
+    </a>
+
+
+    
+    <div class="date-heading">
+
+        <div class="date-left">
+
+            <span class="small-dot gray"></span>
+
+            Oct 22, 2025
+
+        </div>
+
+        <span class="total">
+            $820.00 total
+        </span>
+
+    </div>
+
+
+    
+    <a class="expense" href="../expense_review/index.html">
+
+        <div class="expense-icon"><svg class="se-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg></div>
+
+        <div class="expense-info">
+
+            <div class="expense-name">
+                Private Beach Villa
+            </div>
+
+            <div class="paid">
+                You paid • Airbnb Luxury
+            </div>
+
+            <div class="expense-details">
+                Total bill $820.00 • Split 4
+            </div>
+
+        </div>
+
+        <div class="expense-amount">
+
+            <div class="money">
+                +₹615.00
+            </div>
+
+            <span class="status">
+                you get back
+            </span>
+
+        </div>
+
+    </a>
+
+
+    
+    <div class="crypto">
+
+        <div class="lock">
+            🔒
+        </div>
+
+        <div>
+
+            <div class="crypto-title">
+                Cryptographic Ledger Verified
+            </div>
+
+            <div class="crypto-text">
+                Every transaction is<br>
+                cryptographically<br>
+                timestamped and verifiable<br>
+                by all 5 members.
+            </div>
+
+        </div>
+
+    </div>
+
+<aside id="options" class="se-sheet"><a href="#main" class="sheet-close">×</a><h2>Squad options</h2><a href="../GroupDetails/index.html">Open your group →</a><a href="../Expense_history/expense-history.html">Expense history →</a><a href="../SupportHelp/index.html">Help & support →</a></aside><aside id="cover-options" class="se-sheet"><a href="#main" class="sheet-close">×</a><h2>Trip cover</h2><p>The Goa cover is selected for this HTML/CSS preview.</p><label>Choose a photo <input type="file" accept="image/*"></label></aside><nav class="se-nav" aria-label="Main navigation"><a href="../home.html" class="se-nav-item  "><svg class="se-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Home</span></a><a href="../MyGroups/index.html" class="se-nav-item  "><svg class="se-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v2"/></svg><span>Groups</span></a><a href="../Page_scan_qr/index.html" class="se-nav-item  se-scan"><svg class="se-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><rect x="7" y="7" width="3" height="3"/><rect x="14" y="7" width="3" height="3"/><rect x="7" y="14" width="3" height="3"/><path d="M14 14h3v3h-3v-3m3 3h2v2"/></svg><span>Scan</span></a><a href="../Page_Balances_set up/index.html" class="se-nav-item current " aria-current="page"><svg class="se-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="3"/><path d="M3 8h18m-5 5h5v4h-5zM6 5V3h12"/></svg><span>Balances</span></a><a href="../profile.html" class="se-nav-item  "><svg class="se-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>Profile</span></a></nav></div>
+
+
+
+
+
+<script src="../assets/pro.js" defer></script>
+</body>
+</html>
