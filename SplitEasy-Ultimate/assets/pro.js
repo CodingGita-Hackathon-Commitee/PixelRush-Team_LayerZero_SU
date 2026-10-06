@@ -4,9 +4,7 @@
 
   // Persistent SplitEasy theme: every page reads the same setting.
   const savedTheme = localStorage.getItem('spliteasy-theme');
-  // Match the supplied dark emerald references on first visit. Keep an explicit
-  // light-mode choice across pages once the user changes it.
-  if (savedTheme !== 'light') root.classList.add('dark-mode');
+  if (savedTheme === 'dark') root.classList.add('dark-mode');
   else root.classList.remove('dark-mode');
 
   const toggle = document.createElement('button');
@@ -14,14 +12,7 @@
   toggle.className = 'se-theme-toggle';
   toggle.setAttribute('aria-label', 'Switch theme');
   toggle.innerHTML = '<span class="se-theme-icon">☾</span><span class="se-theme-label">Dark mode</span>';
-  const header = document.querySelector('.header,.topbar,.top-header,.calc-header');
-  const headerActions = header && header.querySelector('.header-actions,.header-buttons');
-  if (header) {
-    (headerActions || header).appendChild(toggle);
-    toggle.classList.add('se-theme-toggle-inline');
-  } else {
-    document.body.appendChild(toggle);
-  }
+  document.body.appendChild(toggle);
 
   const updateThemeButton = () => {
     const dark = root.classList.contains('dark-mode');

@@ -366,7 +366,7 @@ body.dark-mode .signup,body.dark-mode .forgot-password,body.dark-mode .remember-
 /* Buttons. */
 body.dark-mode .button,body.dark-mode .start-btn,body.dark-mode .login-btn,body.dark-mode .create-button,
 body.dark-mode .next-btn,body.dark-mode .add-expense,body.dark-mode .settle,body.dark-mode .map-button,
-body.dark-mode .invite-btn,body.dark-mode .calc-submit{
+body.dark-mode .invite-btn,body.dark-mode .se-action,body.dark-mode .calc-submit{
   color:#ecfff5!important;
   background:linear-gradient(110deg,#006c3a,#00995d 52%,#00c978)!important;
   border-color:rgba(96,255,180,.20)!important;
@@ -374,7 +374,7 @@ body.dark-mode .invite-btn,body.dark-mode .calc-submit{
 }
 body.dark-mode .button:hover,body.dark-mode .start-btn:hover,body.dark-mode .login-btn:hover,
 body.dark-mode .create-button:hover,body.dark-mode .next-btn:hover,body.dark-mode .add-expense:hover,
-body.dark-mode .settle:hover,body.dark-mode .map-button:hover,body.dark-mode .invite-btn:hover,body.dark-mode .calc-submit:hover{
+body.dark-mode .settle:hover,body.dark-mode .map-button:hover,body.dark-mode .invite-btn:hover,body.dark-mode .se-action:hover{
   background:linear-gradient(110deg,#007b43,#00ad68 52%,#00db88)!important;
 }
 
@@ -416,115 +416,3 @@ body.dark-mode .balance-card::before{
 @media(prefers-reduced-motion:reduce){
   body.dark-mode::before,body.dark-mode::after{animation:none!important}
 }
-
-/* Keep the shared theme controls inside page headers when a header exists. */
-.se-theme-toggle-inline{
-  position:relative!important;inset:auto!important;transform:none!important;
-  width:38px;min-width:38px;height:38px;min-height:38px;flex:0 0 38px;
-  justify-content:center;padding:0;border-radius:50%;
-}
-.se-theme-toggle-inline .se-theme-label{display:none}
-@media(max-width:700px){
-  .se-theme-toggle:not(.se-theme-toggle-inline){top:10px;right:10px;min-height:38px;width:38px;padding:0;justify-content:center}
-  .se-theme-toggle:not(.se-theme-toggle-inline) .se-theme-label{display:none}
-}
-
-/* The interaction script may be delayed or blocked; content should remain readable. */
-.pro-reveal{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
-
-/* Dark-mode surfaces and choices for screens with page-specific light defaults. */
-body.dark-mode .list-row,
-body.dark-mode .debt-card,
-body.dark-mode .total-box,
-body.dark-mode .balance-box,
-body.dark-mode .allocation-card{
-  background:linear-gradient(145deg,rgba(19,38,29,.97),rgba(9,21,16,.985))!important;
-  color:var(--se-dark-text)!important;border-color:var(--se-dark-line)!important;
-}
-body.dark-mode .filters .se-choice:not(:has(input:checked)),
-body.dark-mode .filters .filter:not(.active),
-body.dark-mode .tabs .se-choice:not(:has(input:checked)),
-body.dark-mode .main-tabs .se-choice:not(:has(input:checked)),
-body.dark-mode .sub-tabs .se-choice:not(:has(input:checked)),
-body.dark-mode .toggle-buttons .se-choice:not(:has(input:checked)),
-body.dark-mode .expression-buttons .se-choice:not(:has(input:checked)),
-body.dark-mode .vibe-grid .se-choice:not(:has(input:checked)),
-body.dark-mode .currency .se-choice:not(:has(input:checked)){
-  background:#14261e!important;color:#b8cfc2!important;border-color:var(--se-dark-line)!important;
-}
-body.dark-mode .filters .se-choice:has(input:checked),
-body.dark-mode .filters .filter.active,
-body.dark-mode .tabs .se-choice:has(input:checked),
-body.dark-mode .main-tabs .se-choice:has(input:checked),
-body.dark-mode .sub-tabs .se-choice:has(input:checked),
-body.dark-mode .toggle-buttons .se-choice:has(input:checked),
-body.dark-mode .expression-buttons .se-choice:has(input:checked),
-body.dark-mode .vibe-grid .se-choice:has(input:checked),
-body.dark-mode .currency .se-choice:has(input:checked){
-  background:linear-gradient(110deg,#006c3a,#00995d 52%,#00c978)!important;color:#effff7!important;
-}
-body.dark-mode.screen-balances .debt-card .person-details h3,
-body.dark-mode.screen-balances .debt-card .person-details h3 span{color:#ecfff5!important}
-body.dark-mode.screen-balances .debt-card .person-details p,
-body.dark-mode.screen-balances .amount span{color:var(--se-dark-muted)!important}
-body.dark-mode.screen-balances .amount strong{color:var(--se-dark-green2)!important}
-body.dark-mode.screen-balances .request-btn,
-body.dark-mode.screen-balances .small-action,
-body.dark-mode.screen-balances .swap-avatar,
-body.dark-mode.screen-balances .payment-icon{
-  background:#14261e!important;color:#c5d9ce!important;border-color:var(--se-dark-line)!important;
-}
-body.dark-mode.screen-balances .payment-card.se-choice,
-body.dark-mode.screen-balances .payment-card.se-choice:has(:checked){
-  background:linear-gradient(145deg,rgba(19,38,29,.97),rgba(9,21,16,.985))!important;
-  color:#ecfff5!important;border-color:var(--se-dark-line)!important;outline-color:#00e58b!important;
-}
-body.dark-mode.screen-balances .trip-image>span:not(.ref-photo){color:#fff!important}
-body.dark-mode.screen-avatar .style-card.se-choice,
-body.dark-mode.screen-avatar .eye-card.se-choice,
-body.dark-mode.screen-avatar .outfit-card{
-  background:linear-gradient(145deg,rgba(19,38,29,.97),rgba(9,21,16,.985))!important;
-  color:#dcefe5!important;border-color:var(--se-dark-line)!important;
-}
-body.dark-mode.screen-avatar .style-card.se-choice:has(:checked),
-body.dark-mode.screen-avatar .eye-card.se-choice:has(:checked){
-  background:rgba(0,229,139,.16)!important;color:#baffd9!important;border-color:rgba(0,229,139,.46)!important;
-}
-body.dark-mode.screen-avatar .avatar-preview .arrow,
-body.dark-mode.screen-avatar .header-buttons .se-action:not(.shuffle){
-  background:#14261e!important;color:#dffff0!important;border-color:var(--se-dark-line)!important;
-}
-body.dark-mode.screen-avatar .shuffle{background:#0d3e2a!important;color:#baffd9!important}
-body.dark-mode.screen-groups .balance-grid>div.owed{background:#103727!important;border-color:rgba(0,229,139,.22)!important}
-body.dark-mode.screen-groups .balance-grid>div.owe{background:#321c20!important;border-color:rgba(255,130,145,.20)!important}
-body.dark-mode.screen-groups .balance-grid span,
-body.dark-mode.screen-groups .balance-grid p{color:#aec5b8!important}
-body.dark-mode.screen-groups .balance-grid .owed strong{color:#62ffb1!important}
-body.dark-mode.screen-groups .balance-grid .owe strong{color:#ff9ca9!important}
-body.dark-mode.screen-groups .welcome>.se-action,
-body.dark-mode.screen-groups .bell,
-body.dark-mode.screen-balances .header-btn,
-body.dark-mode.screen-balances .trip-actions .se-action{
-  background:#14261e!important;color:#dffff0!important;border:1px solid var(--se-dark-line)!important;
-}
-body.dark-mode.screen-groups .section-title .se-action{background:transparent!important;color:#62ffb1!important;box-shadow:none!important}
-body.dark-mode.screen-balances .payment-card h3{color:#ecfff5!important}
-body.dark-mode.screen-balances .payment-card p{color:var(--se-dark-muted)!important}
-.screen-balances .trip-image>span:not(.ref-photo){display:none}
-body.dark-mode.screen-groups .main-balance{color:var(--se-dark-green2)!important}
-body.dark-mode.screen-balances .balance-amount{color:var(--se-dark-green2)!important}
-body.dark-mode.screen-balances .tabs{background:#0d1f17!important;border:1px solid var(--se-dark-line)!important}
-body.dark-mode.screen-balances .tabs .se-action{background:transparent!important;color:#a9c1b4!important;box-shadow:none!important}
-body.dark-mode.screen-balances .tabs .se-action.active{background:#193026!important;color:#effff7!important}
-.screen-balances .debt-card{min-height:124px}
-.screen-balances .debt-card .person{padding-right:108px}
-.screen-balances .person-details{min-width:0}
-.screen-balances .person-details h3{font-size:15px;line-height:1.2;white-space:normal}
-body.dark-mode.screen-avatar .rotate-tip{background:rgba(255,255,255,.94)!important;color:#20342a!important;box-shadow:0 5px 16px rgba(0,0,0,.16)}
-body.dark-mode.screen-avatar .header-buttons{background:#0d1f17!important;border:1px solid var(--se-dark-line)!important}
-body.dark-mode .header .profile,
-body.dark-mode .topbar .profile,
-body.dark-mode .top-header .profile{background:#14261e!important;color:#dffff0!important;border:1px solid var(--se-dark-line)!important}
-body.dark-mode.screen-balances .graph-description{background:#14261e!important;color:#ecfff5!important}
-body.dark-mode.screen-balances .graph-description p{color:#c1d5ca!important}
-body.dark-mode.screen-balances .graph-description .graph-icon{color:#62ffb1!important}
